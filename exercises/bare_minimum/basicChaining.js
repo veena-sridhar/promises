@@ -14,7 +14,14 @@ var Promise = require('bluebird');
 
 
 var fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
-  // TODO
+  console.log(readFilePath);
+  var options = {
+    url: 'https://api.github.com/users/' + user,
+    headers: { 'User-Agent': 'request' },
+    json: true  // will JSON.parse(body) for us
+  };
+  //return 
+
 };
 
 // Export these functions so we can test them
